@@ -7,7 +7,7 @@
 
 3. Would you use a unit test to test the “max message length” feature of a messaging application? Why or why not? For this question, assume the “max message length” feature prevents the user from typing more than 80 characters</br> <strong>Yes. Since the 'max message length' feature is in a small scale. It can be exected quickly and changing other app features likely won't affect the non-related unit tests.</strong>
 
-4. What do you expect to happen if we run our puppeteer tests with the field “headless” set to true?
+4. What do you expect to happen if we run our puppeteer tests with the field “headless” set to true? </br> <strong>No browser will pop out, and tests will run without the browser. </strong>
 
-5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
+5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case? </br> <strong>We can add one line at last in side the bracket: `await page.click('header img');`</strong>
 
